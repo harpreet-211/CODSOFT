@@ -1,62 +1,183 @@
-/* General styles */
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* Light gray background */
-    color: #333; /* Dark gray text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    background-image: url('background.jpg'); /* Add your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
 }
 
-/* Header styles */
-header {
-    background-color: #4CAF50; /* Green header background */
-    color: white; /* White text */
-    padding: 20px 0;
-    text-align: center;
-}
-
-/* Section styles */
 .section {
-    background-color: white;
-    padding: 40px 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px 0;
 }
 
-/* Profile image styles */
+/* Header Styles */
+header {
+    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent blue */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #fff; /* White */
+}
+
+header p {
+    font-size: 18px;
+    color: #f0f0f0; /* Light gray */
+}
+
+/* Profile Image Styles */
+.profile {
+    float: right;
+    margin-left: 20px;
+}
+
 .profile-pic {
-    width: 200px;
-    height: 200px;
     border-radius: 50%;
-    margin: 0 auto 20px auto;
-    display: block;
-    border: 5px solid #4CAF50; /* Green border */
+    width: 160px;
+    height: 220px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Smooth transition on hover */
 }
 
-/* Links styles */
+.profile-pic:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Home Section Styles */
+.intro-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.intro-section h2 {
+    margin-top: 0;
+    font-size: 32px;
+    color: #333;
+}
+
+.intro-section p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* About Section Styles */
+.about-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h2 {
+    margin-top: 0;
+    font-size: 32px;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Achievements, Qualifications, Certificates Sections Styles */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Reach Out Section Styles */
+.reach-out-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.reach-out-content h2 {
+    margin-top: 0;
+    font-size: 32px;
+    color: #333;
+}
+
+.reach-out-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.reach-out-content ul {
+    padding-left: 20px;
+}
+
+.reach-out-content ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.reach-out-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.reach-out-content a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent blue */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Additional Styling */
+
+/* Section Titles */
+.section h2 {
+    margin-bottom: 20px;
+    color: #333; /* Dark gray */
+}
+
+/* List Items */
+ul li {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Hyperlinks */
 a {
-    color: #4CAF50; /* Green link color */
+    color: #007bff;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-/* Footer styles */
-footer {
-    background-color: #4CAF50; /* Green footer background */
-    color: white; /* White text */
-    text-align: center;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
